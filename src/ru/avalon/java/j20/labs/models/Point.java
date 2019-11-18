@@ -3,7 +3,8 @@ package ru.avalon.java.j20.labs.models;
 /**
  * Модель представления о точке.
  */
-public class Point <T extends Number>{
+public class Point<T extends Number> {
+
     /**
      * Абсцисса точки.
      */
@@ -45,8 +46,7 @@ public class Point <T extends Number>{
     /**
      * Возвращает дистанцию от точки до точки.
      *
-     * @param point точка, до которой следует вычислить
-     *              дистанцию.
+     * @param point точка, до которой следует вычислить дистанцию.
      * @return дистанция между точками
      */
     public double distanceTo(Point<T> point) {

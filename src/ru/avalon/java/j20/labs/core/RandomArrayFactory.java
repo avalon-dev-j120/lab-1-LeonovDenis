@@ -3,8 +3,7 @@ package ru.avalon.java.j20.labs.core;
 import java.util.Random;
 
 /**
- * Фабрика, создающая массивы целых чисел, наполненные
- * случайными значениями.
+ * Фабрика, создающая массивы целых чисел, наполненные случайными значениями.
  */
 public class RandomArrayFactory implements Factory<Integer[], Integer> {
 
@@ -14,8 +13,8 @@ public class RandomArrayFactory implements Factory<Integer[], Integer> {
     private final Random random = new Random();
 
     /**
-     * Возвращает новый массив заданной длины. Массив
-     * содержит случайные значения в диапазоне от 1 до 100.
+     * Возвращает новый массив заданной длины. Массив содержит случайные
+     * значения в диапазоне от 1 до 100.
      *
      * @param length длина массива
      * @return новый массив случайных чисел, заданной длины.

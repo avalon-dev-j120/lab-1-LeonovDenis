@@ -6,7 +6,8 @@ import ru.avalon.java.j20.labs.models.Point;
 /**
  * Задание №2.
  *
- * <p>Тема: "Создание обобщённых классов".
+ * <p>
+ * Тема: "Создание обобщённых классов".
  */
 public class Task2 implements Task {
 
@@ -35,11 +36,11 @@ public class Task2 implements Task {
          * 4. С использованием отладчика проверьте корректность
          *    работы программы.
          */
-        Point iPoint,fPoint;
-        iPoint=new Point<>(1,2);
-        fPoint=new Point<>(2.f,1.f);
-       
-        double distance =iPoint.distanceTo(fPoint);
-        
+        Point iPoint, fPoint;
+        iPoint = new Point<>(1, 2);
+        fPoint = new Point<>(2.f, 1.f);
+
+        double distance = iPoint.distanceTo(fPoint);
+
     }
 }
