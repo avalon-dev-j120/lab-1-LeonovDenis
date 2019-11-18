@@ -3,6 +3,8 @@ package ru.avalon.java.j20.labs.tasks;
 import ru.avalon.java.j20.labs.Task;
 
 import java.util.Iterator;
+import ru.avalon.java.j20.labs.core.FibonacciFactory;
+import ru.avalon.java.j20.labs.models.Fibonacci;
 
 /**
  * Задание №3
@@ -11,8 +13,23 @@ import java.util.Iterator;
  */
 public class Task3 implements Task {
 
+ /**
+     * Фабрика, создающая последовательность чисел Фибонаачи.
+     */
+    private final FibonacciFactory fibonacciFactory= new FibonacciFactory();   
+    
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void run() {
+       Fibonacci fibonacci =fibonacciFactory.getInstance(20);
+       int sum=0;
+        for (Integer integer : fibonacci) {
+            sum+=integer;
+        }
+        
+        
         /*
          * TODO(Студент): Выполнить задание №3
          *
