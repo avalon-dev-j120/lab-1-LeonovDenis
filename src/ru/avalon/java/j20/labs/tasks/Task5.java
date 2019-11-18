@@ -37,7 +37,7 @@ public class Task5 implements Task {
         }
 
         System.out.println(list.toString());
-        System.out.println("\n==============================");
+        System.out.println("==============================");
         System.out.println(set.toString());
         /**
          * TODO(Студент): Выполните задание №5
