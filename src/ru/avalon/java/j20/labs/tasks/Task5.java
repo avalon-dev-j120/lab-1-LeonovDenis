@@ -31,10 +31,8 @@ public class Task5 implements Task {
 
         List<Integer> list = new ArrayList<>(Arrays.asList(array));
 
-        Set<Integer> set = new TreeSet<>();
-        for (Integer integer : array) {
-            set.add(integer);
-        }
+        Set<Integer> set = new TreeSet<>(list);
+        
 
         System.out.println(list.toString());
         System.out.println("==============================");
