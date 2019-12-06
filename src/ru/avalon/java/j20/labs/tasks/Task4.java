@@ -6,7 +6,8 @@ import ru.avalon.java.j20.labs.models.Person;
 /**
  * Задание №4.
  *
- * <p>Тема: "Методы класса {@link Object}".
+ * <p>
+ * Тема: "Методы класса {@link Object}".
  */
 public class Task4 implements Task {
 

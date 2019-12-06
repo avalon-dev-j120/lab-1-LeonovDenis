@@ -1,15 +1,19 @@
 package ru.avalon.java.j20.labs.tasks;
 
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
+import java.util.ArrayList;
+import java.util.Arrays;
 import ru.avalon.java.j20.labs.Task;
 import ru.avalon.java.j20.labs.core.RandomArrayFactory;
-
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Задание №5.
  *
- * <p>Тема: "Изучение отличия между списками и наборами".
+ * <p>
+ * Тема: "Изучение отличия между списками и наборами".
  */
 public class Task5 implements Task {
 
@@ -23,22 +27,26 @@ public class Task5 implements Task {
      */
     @Override
     public void run() {
-        final int[] array = arrayFactory.getInstance(20);
+        final Integer[] array = arrayFactory.getInstance(20);
 
-        List<Integer> list = null;
+        List<Integer> list = new ArrayList<>(Arrays.asList(array));
 
-        Set<Integer> set = null;
+        Set<Integer> set = new TreeSet<>(list);
+        
 
+        System.out.println(list.toString());
+        System.out.println("==============================");
+        System.out.println(set.toString());
         /**
          * TODO(Студент): Выполните задание №5
          *
-         * 1. Проинициализируйте переменные list и set объектами
-         *    подходящих классов.
+         * 1. Проинициализируйте переменные list и set объектами подходящих
+         * классов.
          *
          * 2. В обе коллекции поместите элементы массива array.
          *
-         * 3. С использованием отладчика проверьте корректность
-         *    выполнения задания.
+         * 3. С использованием отладчика проверьте корректность выполнения
+         * задания.
          */
     }
 }
